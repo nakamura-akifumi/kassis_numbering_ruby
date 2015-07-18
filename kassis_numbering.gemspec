@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require './version'
+require 'version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "."
-  spec.version       = .::VERSION
+  spec.name          = "kassis_numbering"
+  spec.version       = KassisNumbering::VERSION
   spec.authors       = ["Akifumi NAKAMURA"]
-  spec.email         = ["nakamura.akifumi@miraitsystems.jp"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["tmpz84@gmail.com"]
+  spec.summary       = %q{Ruby client for Kassis Numbering}
+  spec.description   = %q{Ruby client for Kassis Numbering}
+  spec.homepage      = "https://github.com/nakamura-akifumi/kassis_numbering_ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
